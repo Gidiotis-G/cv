@@ -50,18 +50,15 @@
             text-transform: uppercase;
             font-size: 1.2em;
         }
-        .contact-info p {
-            margin: 5px 0;
+        .contact-info p, .skills-list p {
+            margin: 15px 0;
         }
-        .contact-info a {
+        .contact-info a, .skills-list a {
             color: #ecf0f1;
             text-decoration: none;
         }
-        .contact-info a:hover {
+        .contact-info a:hover, .skills-list a:hover {
             text-decoration: underline;
-        }
-        .skills-list p {
-            margin: 15px 0;
         }
         .skills-list strong {
             color: #3498db;
@@ -76,6 +73,7 @@
             margin: 0 0 20px 0;
             font-size: 1.2em;
             font-weight: 400;
+            text-align: left; /* Ensure job title is not justified */
         }
         .right-column h2 {
             color: #2c3e50;
@@ -99,6 +97,34 @@
         ul {
             padding-left: 20px;
         }
+        .right-column .project a {
+            color: #333;
+            text-decoration: underline;
+        }
+        .right-column .project a:hover {
+            color: #3498db;
+        }
+        /* Justify alignment for main text content in the right column */
+        .right-column p, .right-column li {
+            text-align: justify;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            color: #ffffff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -115,10 +141,12 @@
             </div>
 
             <div class="skills-list">
-                <h2>Τεχνικές Δεξιότητες</h2>
-                <p>Python (Βασικό και Μεσαίο επίπεδο)</p>
+                <h2>Δεξιότητες</h2>
+                <p><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/c934adb82e3fb7e156b9bed694df240bc67c633e" target="_blank" rel="noopener noreferrer">Introduction to Python</a></p>
+                <p>Intermediate Python</p>
+                <p>Data Manipulation with Pandas</p>
                 <p>SPSS</p>
-                <p>Καλή Γνώση του Microsoft Office</p>
+                <p>Προχωρημένη Γνώση του Microsoft Office ( Word, Excel, PowerPoint)</p>
                 <h2>Γλώσσες</h2>
                 <p>Αγγλικά (C2-ECPE Michigan)</p>
             </div>
@@ -136,7 +164,7 @@
                 <p><strong>Χρηματοοικονομική Ανάλυση:</strong> Ικανότητα αξιολόγησης της οικονομικής υγείας και απόδοσης μιας επιχείρησης μέσω της ανάλυσης χρηματοοικονομικών καταστάσεων και βασικών δεικτών.</p>
                 <p><strong>Αναλυτική Σκέψη:</strong> Ικανότητα κριτικής ανάλυσης ποσοτικών δεδομένων με χρήση εργαλείων όπως το SPSS και το Excel για την εξαγωγή τεκμηριωμένων συμπερασμάτων.</p>
                 <p><strong>Έρευνα & Συλλογή Πρωτογενών Δεδομένων:</strong> Εμπειρία στον σχεδιασμό και τη διεξαγωγή έρευνας μέσω δομημένων συνεντεύξεων και ερωτηματολογίων.</p>
-                <p><strong>Ομαδική Εργασία & Συνεργασία:</strong> Αποδεδειγμένη ικανότητα για αποτελεσματική συνεργασία και συνεισφορά στην επίτευξη κοινών στόχων σε πλαίσιο ακαδημαϊκών ομαδικών εργασιών.</p>
+                <p><strong>Ομαδική Εργασία:</strong> Αποτελεσματική συνεργασία και συνεισφορά στην επίτευξη κοινών στόχων σε πλαίσιο ακαδημαϊκών ομαδικών εργασιών.</p>
             </div>
 
             <h2>Εκπαίδευση & Κατάρτιση</h2>
@@ -147,31 +175,33 @@
             </div>
             <div class="project">
                 <h3>DATACAMP - Online Learning Platform</h3>
-                <p>Ολοκληρωμένα courses στο πλαίσιο του μαθήματος "Προγραμματισμός για Επιχειρησιακή Αναλυτική":</p>
+                <p>Ολοκλήρωσα τα παρακάτω courses στο πλαίσιο του μαθήματος "Προγραμματισμός για Επιχειρησιακή Αναλυτική":</p>
                 <ul>
-                    <li>Introduction to Python</li>
+                    <li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/c934adb82e3fb7e156b9bed694df240bc67c633e" target="_blank" rel="noopener noreferrer">Introduction to Python</a></li>
                     <li>Intermediate Python</li>
                     <li>Data Manipulation with Pandas</li>
                 </ul>
             </div>
 
-            <h2>Ακαδημαϊκά Projects</h2>
+            <h2>Ακαδημαϊκές εργασίες</h2>
             <div class="project">
                 <h3>Έρευνα Αγοράς και Ανάπτυξη Ιδέας για Προϊόν</h3>
                 <ul class="project-details">
-                    <li>Εργασία σε ομάδα 4 ατόμων για την έρευνα και την ανάπτυξη ιδεών για νέο προϊόν.</li>
-                    <li>Διεξαγωγή συνεντεύξεων και συλλογή ερωτηματολογίων σχετικά με το προϊόν.</li>
-                    <li>Εισαγωγή δεδομένων σε Excel και χρήση του προγράμματος SPSS για την ανάλυση των αποτελεσμάτων.</li>
+                    <li>Εργάστηκα σε ομάδα 4 ατόμων για την έρευνα και την ανάπτυξη ιδεών για νέο προϊόν.</li>
+                    <li>Πραγματοποιήθηκαν συνεντεύξεις και συλλογή ερωτηματολογίων σχετικά με το προϊόν.</li>
+                    <li>Επεξεργασία δεδομένων σε Excel και ανάλυση των αποτελεσμάτων στο πρόγραμμα SPSS.</li>
                 </ul>
             </div>
             <div class="project">
                 <h3>Ανάλυση των Χρηματοοικονομικών Καταστάσεων της JUMBO Α.Ε.Ε.</h3>
                  <ul class="project-details">
-                    <li>Εκπόνηση ατομικής εργασίας με αντικείμενο την ανάλυση των χρηματοοικονομικών καταστάσεων της εταιρείας.</li>
-                    <li>Ανάλυση δεδομένων που προέκυψαν από τη μελέτη των 5 τελευταίων Οικονομικών εκθέσεων της (2019 – 2023).</li>
-                    <li>Αξιολόγηση πληροφοριών και εξαγωγή συμπερασμάτων σχετικά με την κατάσταση, το μέγεθος και την πορεία της επιχείρησης.</li>
+                    <li>Εκπόνησα ατομική εργασία με αντικείμενο την ανάλυση των χρηματοοικονομικών καταστάσεων της εταιρείας.</li>
+                    <li>Ανέλυσα τα δεδομένα που προέκυψαν από την μελέτη των 5 τελευταίων Οικονομικών εκθέσεων της (2019 – 2023).</li>
+                    <li>Έβγαλα συμπεράσματα με βάση τις πληροφορίες που συγκέντρωσα και εξέφρασα την γνώμη μου όσον αφορά την κατάσταση, το μέγεθος και την πορεία της επιχείρησης.</li>
                 </ul>
             </div>
+            
+            <a href="ΓΕΩΡΓΙΟΣ ΓΙΔΙΩΤΗΣ ΒΙΟΓΡΑΦΙΚΟ.pdf" download="ΓΕΩΡΓΙΟΣ ΓΙΔΙΩΤΗΣ ΒΙΟΓΡΑΦΙΚΟ.pdf" class="download-btn">Λήψη Βιογραφικού</a>
 
         </div>
     </div>
